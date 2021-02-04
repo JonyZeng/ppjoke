@@ -1,4 +1,4 @@
-package com.nice.ppjoke.ui.notifications;
+package com.nice.ppjoke.ui.sofa;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,18 +14,19 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.nice.libnavannotation.FragmentDestination;
 import com.nice.ppjoke.R;
-@FragmentDestination(pageUrl = "main/tabs/notifications", asStarter = true)
-public class NotificationsFragment extends Fragment {
 
-    private NotificationsViewModel notificationsViewModel;
+@FragmentDestination(pageUrl = "main/tabs/sofa")
+public class SofaFragment extends Fragment {
+
+    private SofaViewModel mSofaViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        notificationsViewModel =
-                new ViewModelProvider(this).get(NotificationsViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_notifications, container, false);
-        final TextView textView = root.findViewById(R.id.text_notifications);
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        mSofaViewModel =
+                new ViewModelProvider(this).get(SofaViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_sofa, container, false);
+        final TextView textView = root.findViewById(R.id.text_sofa);
+        mSofaViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
