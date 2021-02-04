@@ -1,0 +1,26 @@
+{
+  "main/tabs/dashboard": {
+    "isFragment": true,
+    "asStarter": true,
+    "needLogin": false,
+    "pageUrl": "main/tabs/dashboard",
+    "className": "com.nice.ppjoke.ui.dashboard.DashboardFragment",
+    "id": 86456539
+  },
+  "main/tabs/home": {
+    "isFragment": true,
+    "asStarter": true,
+    "needLogin": false,
+    "pageUrl": "main/tabs/home",
+    "className": "com.nice.ppjoke.ui.home.HomeFragment",
+    "id": 1918482641
+  },
+  "main/tabs/notifications": {
+    "isFragment": true,
+    "asStarter": true,
+    "needLogin": false,
+    "pageUrl": "main/tabs/notifications",
+    "className": "com.nice.ppjoke.ui.notifications.NotificationsFragment",
+    "id": 1164218749
+  }
+}
